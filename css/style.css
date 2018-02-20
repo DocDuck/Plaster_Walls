@@ -1,2 +1,30 @@
-body {
+@charset "UTF-8";
+/* Colors  */
+/* Base settings */
+html {
   font-size: 10px; }
+
+.button {
+  background-color: #fab102;
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase; }
+
+/* Typography */
+section {
+  padding: 10rem 0; }
+
+/* Main (первая секция)*/
+main {
+  padding: 3rem 0; }
+
+.header {
+  height: 7rem; }
+
+.phone {
+  display: inline-block;
+  color: #1a1820;
+  font-weight: 900;
+  font-size: 2rem; }
