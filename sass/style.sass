@@ -29,6 +29,8 @@ section
 	padding: 10rem 0
 
 /* Main (первая секция)*/
+.header
+	height: 7rem
 .main
 	padding: 2rem 0
 	background: #fff url(../img/bg.jpg) center center no-repeat
@@ -40,9 +42,10 @@ section
 		font-size: 2rem
 		color: $main-text
 		
-
 	&-content
 		margin-top: 8rem
+	/* Правая часть блока main*/
+
 	h1
 		margin-bottom: 3rem
 		@include bold()
@@ -73,11 +76,52 @@ section
 		display: block
 		text-transform: uppercase
 		font-size: 2.2rem
+	/* Левая часть main (форма) */
+	&-form
+		padding: 4rem 5rem
+		background-color: white
+		text-align: center
+		/* Заголовок формы */
+		label
+			position: absolute
+			left: 50%
+			transform: translateX(-50%) translateY(-50%)
+			font-size: 1.3rem
+			display: inline-block
+			background-color: white
+			padding: 0.5rem
+		&_header
+			font-size: 1.8rem
+			font-weight: 600
+			line-height: 1.2
+			margin-bottom: 4rem
+			strong
+				font-size: 1.9rem
+			
+		&_input
+			display: block
+			width: 70%
+			border: 1px solid #ddd 
+			padding: 1.5rem	
+			margin: 2rem auto
+		&_btn
+			margin: 2.2rem auto 1.5rem
+			display: block
+			width: 70%
+			padding: 1.2rem
+			font-size: 1.6rem
+		small
+			display: block
+			margin-top: 1.5rem
+			font-size: 1rem
 
-.header
-	height: 7rem	
+
+			
 
 
+					
+
+	
 
 	
 	
