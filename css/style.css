@@ -1,12 +1,17 @@
 @charset "UTF-8";
+/* Fonts mixins*/
 /* Colors  */
 /* Base settings */
 html {
   font-size: 10px; }
 
+body {
+  font-family: 'ProximaNova_Reg', sans-serif; }
+
 .button {
   background-color: #fab102;
   color: white;
+  font-size: 1.2rem;
   padding: 1rem 3rem;
   border: none;
   border-radius: 8px;
@@ -17,14 +22,48 @@ section {
   padding: 10rem 0; }
 
 /* Main (первая секция)*/
-main {
-  padding: 3rem 0; }
+.main {
+  padding: 2rem 0;
+  background: #fff url(../img/bg.jpg) center center no-repeat;
+  color: #292929; }
+  .main-phone {
+    display: inline-block;
+    font-family: 'ProximaNova_Bold', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #292929; }
+  .main-content {
+    margin-top: 8rem; }
+  .main h1 {
+    margin-bottom: 3rem;
+    font-family: 'ProximaNova_Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 1.45; }
+  .main-subtitle {
+    margin-bottom: 5rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: left; }
+  .main-trigger {
+    margin: auto;
+    display: inline-block;
+    background-color: #49bf15;
+    color: white;
+    font-size: 1.8rem;
+    padding: 2.5rem 4.4rem 0.8rem 3.9rem; }
+    .main-trigger strong {
+      font-size: 3rem; }
+    .main-trigger span {
+      font-size: 2.4rem; }
+  .main-pay {
+    margin-top: 2.7rem;
+    margin-bottom: 7rem;
+    font-family: 'ProximaNova_Bold', sans-serif;
+    display: block;
+    text-transform: uppercase;
+    font-size: 2.2rem; }
 
 .header {
   height: 7rem; }
-
-.phone {
-  display: inline-block;
-  color: #1a1820;
-  font-weight: 900;
-  font-size: 2rem; }

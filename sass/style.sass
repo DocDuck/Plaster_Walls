@@ -1,39 +1,85 @@
+/* Fonts mixins*/
+@mixin reg() 
+	font-family: 'ProximaNova_Reg', sans-serif;
+
+@mixin bold() 
+	font-family: 'ProximaNova_Bold', sans-serif;
+
 /* Colors  */
 $btn-color: #fab102
 $icon-green: #49bf15
+$main-text: #292929
 $text: #1a1820
 /* Base settings */
 html
 	font-size: 10px
-
+body
+	@include reg()
 .button
 	background-color: $btn-color
 	color: white
+	font-size: 1.2rem
 	padding: 1rem 3rem
 	border: none
 	border-radius: 8px
 	text-transform: uppercase
-
-
-
-
 
 /* Typography */
 section
 	padding: 10rem 0
 
 /* Main (первая секция)*/
-main
-	padding: 3rem 0
+.main
+	padding: 2rem 0
+	background: #fff url(../img/bg.jpg) center center no-repeat
+	color: $main-text
+	&-phone
+		display: inline-block
+		@include bold()
+		font-weight: 900
+		font-size: 2rem
+		color: $main-text
+		
+
+	&-content
+		margin-top: 8rem
+	h1
+		margin-bottom: 3rem
+		@include bold()
+		text-transform: uppercase
+		font-size: 4rem
+		line-height: 1.45
+	&-subtitle
+		margin-bottom: 5rem
+		font-size: 2.4rem
+		font-weight: 600
+		line-height: 1.4
+		text-align: left
+	&-trigger
+		margin: auto
+		display: inline-block
+		background-color: $icon-green
+		color: white
+		font-size: 1.8rem
+		padding: 2.5rem 4.4rem 0.8rem 3.9rem
+		strong
+			font-size: 3rem
+		span
+			font-size: 2.4rem	
+	&-pay
+		margin-top: 2.7rem
+		margin-bottom: 7rem
+		@include bold()
+		display: block
+		text-transform: uppercase
+		font-size: 2.2rem
+
 .header
 	height: 7rem	
 
-.phone
-	display: inline-block
-	color: $text
-	font-weight: 900
-	font-size: 2rem
 
+
+	
 	
 
 
