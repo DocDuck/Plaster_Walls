@@ -1,8 +1,14 @@
 {
-  "name": "src",
+  "name": "plaster_walls",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,17 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/DocDuck/Plaster_Walls.git"
   },
-  "author": "Alex_Mitin",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DocDuck/Plaster_Walls/issues"
   },
-  "homepage": "https://github.com/DocDuck/Plaster_Walls#readme",
-  "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglifyjs": "^0.6.2"
-  }
+  "homepage": "https://github.com/DocDuck/Plaster_Walls#readme"
 }

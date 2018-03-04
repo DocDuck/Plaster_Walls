@@ -12,7 +12,7 @@ gulp.task('sass', function() {//таск компилит все сассы в �
 gulp.task('sync', function(){//запускает браузер-синк
 	sync({
 		server: {
-			baseDir: '../src'
+			baseDir: '../Plaster_Walls'
 		},
 		notify: false
 	});

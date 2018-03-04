@@ -2,3 +2,8 @@
 tmp/
 #Ignore node
 node_modules/
+#Ignore gulp
+gulpfile.js
+#Ignore package.json
+package.json
+package-lock.json
