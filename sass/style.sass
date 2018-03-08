@@ -52,12 +52,13 @@ section
 		@include bold()
 		font-weight: 900
 		font-size: 2rem
+		height: 7rem
+		line-height: 7rem
 		color: $main-text
 		
 	&-content
 		margin-top: 8rem
 	/* Правая часть блока main*/
-
 	h1
 		margin-top: -1rem
 		margin-bottom: 3rem
@@ -134,6 +135,45 @@ section
 			display: block
 			margin-top: 1.5rem
 			font-size: 1rem
+/*      Секция с приемуществами      */
+.features
+
+	&-header
+		margin: 2rem 0 10rem
+		@include bold()
+		font-size: 3.6rem
+		text-align: center
+		
+	&-block
+		text-align: center
+		&_img
+			height: 8rem
+			margin-bottom: 3rem
+			img
+				display: block
+				margin: 0 auto
+
+		h3
+			margin-top: 2rem
+			margin-bottom: 3rem
+			@include bold()
+			font-size: 2rem
+
+		p	
+			display: inline-block
+			width: 80%
+			font-size: 1.4rem
+.slick-active
+	outline: none
+
+.prev
+	position: absolute
+	top: 50%
+	left: 0
+	transform: translateY(50%)
+
+
+
 
 @media (max-width: 991px)
 	.main
@@ -150,9 +190,9 @@ section
 	.header
 		text-align: center
 	.main-content
-		margin-top: 14rem
+		margin-top: 15rem
 	.main-phone, .header-btn 
-		margin-top: 2rem
+		// margin-top: 1rem
 	
 			
 			

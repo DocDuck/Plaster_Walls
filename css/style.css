@@ -44,6 +44,8 @@ section {
     font-family: 'ProximaNova_Bold', sans-serif;
     font-weight: 900;
     font-size: 2rem;
+    height: 7rem;
+    line-height: 7rem;
     color: #292929; }
   .main-content {
     margin-top: 8rem; }
@@ -115,6 +117,40 @@ section {
       margin-top: 1.5rem;
       font-size: 1rem; }
 
+/*      Секция с приемуществами      */
+.features-header {
+  margin: 2rem 0 10rem;
+  font-family: 'ProximaNova_Bold', sans-serif;
+  font-size: 3.6rem;
+  text-align: center; }
+
+.features-block {
+  text-align: center; }
+  .features-block_img {
+    height: 8rem;
+    margin-bottom: 3rem; }
+    .features-block_img img {
+      display: block;
+      margin: 0 auto; }
+  .features-block h3 {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-family: 'ProximaNova_Bold', sans-serif;
+    font-size: 2rem; }
+  .features-block p {
+    display: inline-block;
+    width: 80%;
+    font-size: 1.4rem; }
+
+.slick-active {
+  outline: none; }
+
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(50%); }
+
 @media (max-width: 991px) {
   .main {
     background-position: top right; }
@@ -128,6 +164,4 @@ section {
   .header {
     text-align: center; }
   .main-content {
-    margin-top: 14rem; }
-  .main-phone, .header-btn {
-    margin-top: 2rem; } }
+    margin-top: 15rem; } }
