@@ -7,5 +7,4 @@ gulpfile.js
 #Ignore package.json
 package.json
 package-lock.json
-public/uploads/
-public/vendor/
+
