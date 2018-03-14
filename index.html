@@ -15,7 +15,7 @@
 
 	<body>
 		<main class="main">
-
+	
 			<div class="container">
 				<div class="header">
 					<div class="row no-gutters align-items-center justify-content-between">
@@ -30,13 +30,13 @@
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-12">
-							<button class="header-btn button">
+							<button class="header-btn button popup-btn">
 								Получить консультацию
 							</button>
 						</div>
 					</div>
 				</div>
-
+	
 				<div class="main-content">
 					<div class="row no-gutters  justify-content-between">
 						<div class="col-xl-6 col-lg-6 col-md-12">
@@ -68,7 +68,7 @@
 						</div>
 					</div>
 				</div>
-
+	
 			</div>
 			
 		</main>
@@ -119,50 +119,92 @@
 				</div>
 			</div>
 		</section>
+	
+	<!-- Модальные окна -->
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- Получить консультацию -->
+	<div class="popup">
+		<div class="popup-dialog">
+			<div class="popup-content">
+				<button class="popup-close">&times</button>
+				<h4 class="popup-header">Заинтересовало?</h4>
+				<p>Оставьте свои контактне данные<br>для связи</p>
+				<div class="main-form popup-form">
+					<form action="#">
+						<label for="#">Ваше имя</label>
+						<input class="main-form_input"	type="text">
+						<label for="#">Номер телефона</label>
+						<input class="main-form_input" type="text">
+						<label for="#">Сообщение</label>
+						<textarea class="main-form_input" rows="5"></textarea>
+						<button class="button main-form_btn" type="submit">Оставьте заявку</button>
+					</form>
+				</div>	
+			</div>
+		</div>
+	</div>
+	
+	<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 	<script	src="http://code.jquery.com/jquery-migrate-3.0.1.min.js"
-  	integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4="
-  	crossorigin="anonymous"></script>
-  	<link rel="stylesheet" href="slick-1.8.0/slick/slick.css">
-  	<link rel="stylesheet" href="slick-1.8.0/slick/slick-theme.css">
-  	<script src="slick-1.8.0/slick/slick.js"></script>
+	  	integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4="
+	  	crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="slick-1.8.0/slick/slick.css">
+	<link rel="stylesheet" href="slick-1.8.0/slick/slick-theme.css">
+	<script src="slick-1.8.0/slick/slick.js"></script>
 	
 	<script>
 		$(document).ready(function(){
-  			$('.features-slider').slick({
+			$('.features-slider').slick({
     			infinite: true,
     			slidesToShow: 4,
     			slidesToScroll: 1,
     			responsive: [
-				    {
-				      breakpoint: 1199,
-				      settings: {
-				        slidesToShow: 3,
-				        slidesToScroll: 1,
-				        infinite: true,
-				        
-				      }
-				    },
-				    {
-				      breakpoint: 991,
-				      settings: {
-				        slidesToShow: 2,
-				        slidesToScroll: 1
-				      }
-				    },
-				    {
-				      breakpoint: 767,
-				      settings: {
-				        slidesToShow: 1,
-				        slidesToScroll: 1
-				      }
-				    }
+			    {
+			      breakpoint: 1199,
+			      settings: {
+			        slidesToShow: 3,
+			        prevArrow: '<button class="prev arrow"></button>',
+			        nextArrow: '<button class="next arrow"></button>',
+			        slidesToScroll: 2,
+			        infinite: true
+			        
+			      }
+			    },
+			    {
+			      breakpoint: 991,
+			      settings: {
+			        slidesToShow: 2,
+			        prevArrow: '<button class="prev arrow"></button>',
+			        nextArrow: '<button class="next arrow"></button>',
+			        slidesToScroll: 2
+			      }
+			    },
+			    {
+			      breakpoint: 767,
+			      settings: {
+			        slidesToShow: 1,
+			        prevArrow: '<button class="prev arrow"></button>',
+			        nextArrow: '<button class="next arrow"></button>',
+			        slidesToScroll: 1
+			      	}
+			    }
 				]
-
-		  });
-		});
+	  		});
+		
+		// Не понятно, почему слипслайдер слетает после подключения других скриптов...
+			$('.popup-btn').on('click', function(event) {
+				event.preventDefault();
+				$('.popup').fadeIn();	
+			});
+			$('.popup-close').on('click', function(event) {
+				event.preventDefault();
+				$('.popup').fadeOut();	
+			});
+		})	
 	</script>
-
+	
 	</body>
 </html>
