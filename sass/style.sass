@@ -41,7 +41,7 @@ section
 .header
 	height: 7rem
 	&-btn
-
+		float: right
 
 .main
 	padding: 2rem 0
@@ -139,7 +139,7 @@ section
 /*      Секция с приемуществами      */
 .features
 
-	&-header
+	&-header 
 		margin: 2rem 0 10rem
 		@include bold()
 		font-size: 3.6rem
@@ -188,6 +188,59 @@ section
 	background-size: 90%
 	right: 0		
 	background: url(/img/right-arrow.png) center no-repeat	
+/*Секция с ценами*/
+.prices
+	background: url("../img/prices-bg.jpg") center
+	&-btn 
+		text-align: right
+		margin-top: 3rem
+		margin-right: 0
+	&-header
+		text-align: center
+		color: white
+		margin: 2rem 0 10rem
+		h2
+			@include bold()
+			font-size: 3.6rem
+		p
+			font-size: 1.4rem
+		
+			
+			
+	&-card
+		padding: 1rem 2rem 4rem
+		text-align: center
+		box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17)
+		min-height: 50rem
+		h4
+			font-size: 1.9rem
+			@include bold()
+			margin: 3rem 0
+	&-list
+		padding: 0
+		list-style: none
+		min-height: 14rem
+		font-size: 1.6rem
+		line-height: 1.6
+		li
+			&:before  
+				content: ''
+				display: inline-block
+				margin-right: 1rem
+				width: 1.4rem
+				height: 1.4rem
+				background: url("../img/checked.svg") no-repeat center
+				background-size: 100%
+				vertical-align: middle
+	img
+		display: inline-block
+		margin-bottom: 2rem
+	&-tag	
+		display: inline-block
+		margin-bottom: 2rem
+		font-size: 1.9rem
+		@include bold()
+
 
 /*Оформление всплывашек*/
 .popup
@@ -232,7 +285,10 @@ section
 		cursor: pointer
 		
 
-
+@media (max-width: 1199px)
+	.prices-card
+		h4
+			min-height: 5rem		
 
 @media (max-width: 991px)
 	.main
@@ -244,15 +300,26 @@ section
 	.main-title
 		text-align: center
 		padding-bottom: 3rem
-
+	.prices
+		&-btn, &-header
+			text-align: center
+		&-header
+			margin-bottom: 0
+		&-btn	
+			padding: 2rem 0	
+			margin-top: 0.5rem
+			margin-bottom: 2rem
+		&-card
+			margin-top: 2rem
 @media (max-width: 767px)	
 	.header
 		text-align: center
+		&-btn  
+			float: none
 	.main-content
 		margin-top: 15rem
-	.main-phone, .header-btn 
-		// margin-top: 1rem
-	
+	.prices
+		
 			
 			
 
