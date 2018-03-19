@@ -240,6 +240,65 @@ section
 		margin-bottom: 2rem
 		font-size: 1.9rem
 		@include bold()
+/*Секция с отзывами*/
+.feedback
+	background: url("../img/feedback/fb-bg.jpg")
+	&-title
+		text-align: center
+		margin: 2rem 0 10rem
+		h2 
+			font-size: 3.6rem
+			@include bold()
+	
+	&-slider
+		padding: 5rem 6rem
+		background-color:  #ffffff
+		box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11)
+		&_item
+		&_content
+			margin-left: 1rem
+			color:  $text
+			font-size: 1.6rem
+			text-align: left
+		&_btn
+			position: absolute
+			background-color: $icon-green
+			top: 50%
+			transform: translateY(-50%)
+			width: 5rem
+			height: 6rem
+			border: none
+			&:hover
+				cursor: pointer
+		.media
+			margin-top: 3rem
+			h3
+				@include bold()
+	&-prev
+		left: -5rem
+	&-next
+		right: -5rem
+
+	&-text 
+		padding: 1rem
+		margin-top: 2rem
+		border: 2px solid $icon-green
+		font-style: italic
+		position: relative
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: -2rem
+			left: 4rem
+			width: 2rem
+			height: 2rem
+			border: 2px solid $icon-green
+			background-color: white
+			border-bottom: none
+			border-top-right-radius: 10rem
+			
+
 
 
 /*Оформление всплывашек*/
@@ -283,7 +342,7 @@ section
 		background-color: transparent
 		&:hover
 		cursor: pointer
-		
+	
 
 @media (max-width: 1199px)
 	.prices-card
@@ -311,6 +370,7 @@ section
 			margin-bottom: 2rem
 		&-card
 			margin-top: 2rem
+
 @media (max-width: 767px)	
 	.header
 		text-align: center

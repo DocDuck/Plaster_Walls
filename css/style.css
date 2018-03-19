@@ -218,6 +218,61 @@ section {
     font-size: 1.9rem;
     font-family: 'ProximaNova_Bold', sans-serif; }
 
+/*Секция с отзывами*/
+.feedback {
+  background: url("../img/feedback/fb-bg.jpg"); }
+  .feedback-title {
+    text-align: center;
+    margin: 2rem 0 10rem; }
+    .feedback-title h2 {
+      font-size: 3.6rem;
+      font-family: 'ProximaNova_Bold', sans-serif; }
+  .feedback-slider {
+    padding: 5rem 6rem;
+    background-color: #ffffff;
+    box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11); }
+    .feedback-slider_content {
+      margin-left: 1rem;
+      color: #1a1820;
+      font-size: 1.6rem;
+      text-align: left; }
+    .feedback-slider_btn {
+      position: absolute;
+      background-color: #49bf15;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5rem;
+      height: 6rem;
+      border: none; }
+      .feedback-slider_btn:hover {
+        cursor: pointer; }
+    .feedback-slider .media {
+      margin-top: 3rem; }
+      .feedback-slider .media h3 {
+        font-family: 'ProximaNova_Bold', sans-serif; }
+  .feedback-prev {
+    left: -5rem; }
+  .feedback-next {
+    right: -5rem; }
+  .feedback-text {
+    padding: 1rem;
+    margin-top: 2rem;
+    border: 2px solid #49bf15;
+    font-style: italic;
+    position: relative; }
+    .feedback-text::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -2rem;
+      left: 4rem;
+      width: 2rem;
+      height: 2rem;
+      border: 2px solid #49bf15;
+      background-color: white;
+      border-bottom: none;
+      border-top-right-radius: 10rem; }
+
 /*Оформление всплывашек*/
 .popup {
   display: none;
