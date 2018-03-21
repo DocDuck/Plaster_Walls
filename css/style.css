@@ -25,6 +25,32 @@ button:focus, input:focus, a:focus, textarea:focus {
     cursor: pointer;
     background-color: #d79802; }
 
+/*  Шаблон формы */
+.form label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 1.3rem;
+  display: inline-block;
+  background-color: white;
+  padding: 0.5rem; }
+
+.form_input {
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 2rem auto; }
+
+.form_btn {
+  margin: 2.2rem auto 1.5rem;
+  display: block;
+  height: 5rem;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem; }
+
 /* Typography */
 section {
   padding: 10rem 0; }
@@ -83,38 +109,16 @@ section {
     text-transform: uppercase;
     font-size: 2.2rem; }
   .main-form {
-    padding: 4rem 0;
+    padding: 4rem 5rem;
     background-color: white;
-    text-align: center;
-    /* Заголовок формы */ }
-    .main-form label {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      font-size: 1.3rem;
-      display: inline-block;
-      background-color: white;
-      padding: 0.5rem; }
+    text-align: center; }
     .main-form_header {
       font-size: 1.8rem;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 1.2;
       margin-bottom: 4rem; }
       .main-form_header strong {
         font-size: 1.9rem; }
-    .main-form_input {
-      display: block;
-      width: 70%;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 1.5rem;
-      margin: 2rem auto; }
-    .main-form_btn {
-      margin: 2.2rem auto 1.5rem;
-      display: block;
-      width: 70%;
-      padding: 1.2rem;
-      font-size: 1.6rem; }
     .main-form small {
       display: block;
       margin-top: 1.5rem;
@@ -220,6 +224,7 @@ section {
 
 /*Секция с отзывами*/
 .feedback {
+  position: relative;
   background: url("../img/feedback/fb-bg.jpg"); }
   .feedback-title {
     text-align: center;
@@ -272,6 +277,24 @@ section {
       background-color: white;
       border-bottom: none;
       border-top-right-radius: 10rem; }
+  .feedback-form {
+    background-color: white;
+    text-align: center;
+    margin-top: 6rem;
+    padding: 4rem 8rem; }
+    .feedback-form h3 {
+      margin-bottom: 2rem;
+      font-family: 'ProximaNova_Bold', sans-serif;
+      font-size: 1.8rem; }
+    .feedback-form label {
+      transform: translate(-50%, 7px); }
+  .feedback-btn {
+    max-width: 30rem; }
+  .feedback-arm {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 30rem; }
 
 /*Оформление всплывашек*/
 .popup {
@@ -313,8 +336,12 @@ section {
     cursor: pointer; }
 
 @media (max-width: 1199px) {
-  .prices-card h4 {
-    min-height: 5rem; } }
+  .prices-card h3 {
+    min-height: 5rem;
+    margin-top: 3rem;
+    font-size: 2rem; }
+  .feedback-form {
+    padding: 3rem 5rem; } }
 
 @media (max-width: 991px) {
   .main {
@@ -341,4 +368,20 @@ section {
     .header-btn {
       float: none; }
   .main-content {
-    margin-top: 15rem; } }
+    margin-top: 15rem; }
+  .feedback-arm {
+    max-width: 20rem; } }
+
+@media (max-width: 575px) {
+  .main h1 {
+    font-size: 3rem; }
+  .feedback label {
+    line-height: 1.2rem; }
+  .feedback-prev {
+    left: 0; }
+  .feedback-next {
+    right: 0; }
+  .feedback-arm {
+    max-width: 15rem; }
+  .feedback-btn {
+    font-size: 1.2rem; } }

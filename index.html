@@ -54,12 +54,12 @@
 						<div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-12">
 							<div class="main-form">
 								<h2 class="main-form_header">Для расчета точной стоимости <br>закажите <strong>выезд замерщика</strong></h2>
-								<form action="#">
+								<form class="form" action="#">
 									<label for="#">Ваше имя</label>
-									<input class="main-form_input"	type="text">
+									<input class="form_input"	type="text">
 									<label for="#">Номер телефона</label>
-									<input class="main-form_input" type="text">
-									<button class="button main-form_btn" type="submit">оставьте заявку</button>
+									<input class="form_input" type="text">
+									<button class="button form_btn" type="submit">оставьте заявку</button>
 									<small>Приедем в день обращения*</small>
 								</form>
 							</div>
@@ -185,14 +185,16 @@
 
 		<section class="feedback">
 			<div class="container">
+
 				<div class="feedback-title">
 					<h2>Отзывы</h2>
 				</div>
+
 				<div class="feedback-slider">
 					<div class="feedback-slider_item">
 						<div class="row">
-							<div class="col-6">
-								<div class="fotorama" data-nav="thumbs">
+							<div class="col-lg-6 col-md-12">
+								<div class="fotorama" data-width="100%" data-nav="thumbs">
 									<img src="../img/feedback/fb-0.jpg" alt="">
 									<img src="../img/feedback/fb-0.jpg" alt="">
 									<img src="../img/feedback/fb-0.jpg" alt="">
@@ -201,7 +203,7 @@
 									<img src="../img/feedback/fb-0.jpg" alt="">
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-lg-6 col-md-12">
 								<div class="feedback-slider_content">
 									<p>Объект: г.Москва, Нахимовский проспект д.10</p>
 									<p>Площадь: <strong>357 м2</strong></p>
@@ -225,8 +227,8 @@
 					</div>
 					<div class="feedback-slider_item">
 						<div class="row">
-							<div class="col-6">
-								<div class="fotorama" data-nav="thumbs">
+							<div class="col-lg-6 col-md-12">
+								<div class="fotorama" data-width="100%" data-nav="thumbs">
 									<img src="../img/feedback/fb-0.jpg" alt="">
 									<img src="../img/feedback/fb-0.jpg" alt="">
 									<img src="../img/feedback/fb-0.jpg" alt="">
@@ -235,7 +237,7 @@
 									<img src="../img/feedback/fb-0.jpg" alt="">
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-lg-6 col-md-12">
 								<div class="feedback-slider_content">
 									<p>Объект: г.Москва, Нахимовский проспект д.10</p>
 									<p>Площадь: <strong>357 м2</strong></p>
@@ -255,10 +257,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="feedback-slider_item">
+		 			<div class="feedback-slider_item">
 						<div class="row">
-							<div class="col-6">
-								<div class="fotorama" data-nav="thumbs">
+							<div class="col-lg-6 col-md-12">
+								<div class="fotorama" data-width="100%" data-nav="thumbs">
 									<img src="../img/feedback/fb-0.jpg" alt="">
 									<img src="../img/feedback/fb-0.jpg" alt="">
 									<img src="../img/feedback/fb-0.jpg" alt="">
@@ -267,7 +269,7 @@
 									<img src="../img/feedback/fb-0.jpg" alt="">
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-lg-6 col-md-12">
 								<div class="feedback-slider_content">
 									<p>Объект: г.Москва, Нахимовский проспект д.10</p>
 									<p>Площадь: <strong>357 м2</strong></p>
@@ -289,8 +291,33 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-8">
+						<div class="feedback-form">
+							<h3>Хотите так же? Оставьте Ваши контактные данные</h3>
+							<form action="" class="form">
+								<div class="row">
+									<div class="col-lg-6 col-md-12">
+										<label for="#">Ваше имя</label>
+										<input class="form_input"	type="text">
+									</div>
+									<div class="col-lg-6 col-md-12">
+										<label for="#">Номер телефона</label>
+										<input class="form_input" type="text">
+									</div>
+								</div>
+								<button class="button form_btn feedback-btn" type="submit">оставьте заявку</button>
+							</form>
+						</div>
+
+					</div>
+				</div>
 			</div>
+			<img src="img/feedback/fb-arm.png" alt="" class="feedback-arm">
 		</section>
+
+
 	
 	<!-- Модальные окна -->
 	
@@ -301,15 +328,15 @@
 				<button class="popup-close">&times</button>
 				<h3 class="popup-header">Заинтересовало?</h3>
 				<p>Оставьте свои контактне данные<br>для связи</p>
-				<div class="main-form popup-form">
+				<div class="form popup-form">
 					<form action="#">
 						<label for="#">Ваше имя</label>
-						<input class="main-form_input"	type="text">
+						<input class="form_input"	type="text">
 						<label for="#">Номер телефона</label>
-						<input class="main-form_input" type="text">
+						<input class="form_input" type="text">
 						<label for="#">Сообщение</label>
-						<textarea class="main-form_input" rows="5"></textarea>
-						<button class="button main-form_btn" type="submit">Оставьте заявку</button>
+						<textarea class="form_input" rows="5"></textarea>
+						<button class="button form_btn" type="submit">Оставьте заявку</button>
 					</form>
 				</div>	
 			</div>
