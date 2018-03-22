@@ -60,6 +60,16 @@ button, input, a, textarea
 section
 	padding: 10rem 0
 
+.section-header
+	text-align: center
+	margin: 2rem 0 10rem
+	h2 
+		font-size: 3.6rem
+		@include bold()
+	&_green
+		color: $icon-green
+
+
 /* Main (первая секция)*/
 .header
 	height: 7rem
@@ -193,12 +203,7 @@ section
 		margin-top: 3rem
 		margin-right: 0
 	&-header
-		text-align: center
 		color: white
-		margin: 2rem 0 10rem
-		h2
-			@include bold()
-			font-size: 3.6rem
 		p
 			font-size: 1.4rem
 		
@@ -241,13 +246,7 @@ section
 .feedback
 	position: relative
 	background: url("../img/feedback/fb-bg.jpg")
-	&-title
-		text-align: center
-		margin: 2rem 0 10rem
-		h2 
-			font-size: 3.6rem
-			@include bold()
-	
+		
 	&-slider
 		padding: 5rem 6rem
 		background-color:  #ffffff
@@ -314,7 +313,47 @@ section
 		left: 0
 		max-width: 30rem
 
-
+/*Секция Схема работы*/
+.scheme
+	background: white url(../img/scheme/6_1.png) no-repeat bottom -10rem right -10rem	
+	background-size: 65rem
+	p
+		font-size: 1.3rem
+	&-block
+		min-height: 10rem
+		margin: 3rem 3rem
+		h3
+			font-size: 2rem
+			@include bold()
+		
+/* Секция Всё включено */
+.inclusive
+	background-color: #f5f5f5 
+	.media
+		min-height: 10rem	
+		h4
+			font-size: 1.6rem
+			@include bold()
+		p
+			font-size: 1.1rem
+	.circle
+		display: inline-block
+		background-color: $icon-green
+		width: 100%
+		height: 100%
+		border-radius: 50%
+		&-border
+			display: inline-block
+			padding: 0.3rem	
+			width: 4rem
+			height: 4rem
+			border: 2px solid $icon-green
+			border-radius: 50%
+			text-align: center
+			line-height: 3rem
+			color: white
+			font-size: 1.6rem
+			@include bold()
 
 
 /*Оформление всплывашек*/
@@ -344,7 +383,7 @@ section
 	&-header
 		@include bold()	
 	&-form
-		padding: 0	
+		padding: 0 3rem	
 		margin-top: 3rem
 	&-close
 		position: absolute
@@ -358,7 +397,8 @@ section
 		background-color: transparent
 		&:hover
 		cursor: pointer
-	
+
+/* ------------------- МЕДИА-ЗАПРОСЫ -----------------------*/	
 
 @media (max-width: 1199px)
 	.prices-card
@@ -406,6 +446,11 @@ section
 	.feedback
 		&-arm
 			max-width: 20rem	
+	.scheme
+		background: none
+		text-align: center		
+		&-block
+			height: auto
 
 @media (max-width: 575px)	
 	.main
