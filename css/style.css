@@ -63,6 +63,8 @@ section {
     font-family: 'ProximaNova_Bold', sans-serif; }
   .section-header_green {
     color: #49bf15; }
+  .section-header_white {
+    color: white; }
 
 /* Main (первая секция)*/
 .header {
@@ -74,7 +76,6 @@ section {
   padding: 2rem 0;
   background: #fff url(../img/bg.jpg) center center no-repeat;
   color: #292929;
-  /* Правая часть блока main*/
   /* Левая часть main (форма) */ }
   .main-phone_link {
     display: inline-block;
@@ -85,15 +86,16 @@ section {
     line-height: 7rem;
     color: #292929; }
   .main-content {
-    margin-top: 8rem; }
-  .main h1 {
-    margin-top: -1rem;
-    margin-bottom: 3rem;
-    font-family: 'ProximaNova_Bold', sans-serif;
-    text-transform: uppercase;
-    font-size: 4rem;
-    line-height: 1.45;
-    min-width: 0; }
+    margin-top: 8rem;
+    /* Правая часть блока main*/ }
+    .main-content h1 {
+      margin-top: -1rem;
+      margin-bottom: 3rem;
+      font-family: 'ProximaNova_Bold', sans-serif;
+      text-transform: uppercase;
+      font-size: 4rem;
+      line-height: 1.45;
+      min-width: 0; }
   .main-subtitle {
     margin-bottom: 5rem;
     font-size: 2.4rem;
@@ -189,10 +191,9 @@ section {
     text-align: right;
     margin-top: 3rem;
     margin-right: 0; }
-  .prices-header {
-    color: white; }
-    .prices-header p {
-      font-size: 1.4rem; }
+  .prices p {
+    font-size: 1.5rem;
+    margin-top: 4rem; }
   .prices-card {
     padding: 1rem 2rem 4rem;
     text-align: center;
@@ -382,6 +383,7 @@ section {
     left: 50%;
     margin-left: -19rem; }
 
+/* Секция с материалами*/
 .materials {
   font-size: 1.9rem;
   text-align: center;
@@ -397,6 +399,7 @@ section {
         display: block;
         margin: 0 auto; }
     .materials-block h3 {
+      font-size: 2.2rem;
       font-family: 'ProximaNova_Bold', sans-serif; }
     .materials-block a {
       color: #49bf15;
@@ -411,6 +414,45 @@ section {
   .materials-site {
     color: #49bf15; }
 
+/*Секция Тур по стройке*/
+.tour {
+  background: white url("../img/tour/tour.jpg") no-repeat center;
+  background-size: cover; }
+  .tour h2 {
+    font-family: 'ProximaNova_Bold', sans-serif; }
+  .tour-btn {
+    margin: 2.2rem auto 1.5rem;
+    display: block;
+    height: 5rem;
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.2rem; }
+
+/*Секция допуслуг*/
+.upsell {
+  background-color: #286b0a; }
+  .upsell .section-header h2 {
+    font-size: 3.6rem; }
+  .upsell .section-header p {
+    margin-top: 4rem;
+    font-size: 1.9rem; }
+  .upsell-block {
+    min-height: 30rem;
+    margin-top: -3rem;
+    text-align: center; }
+    .upsell-block img {
+      display: inline-block;
+      width: 100%;
+      max-width: 45rem; }
+    .upsell-block p {
+      margin-top: 3rem;
+      font-size: 1.8rem;
+      color: white; }
+    .upsell-block button {
+      margin-top: 2rem;
+      font-family: 'ProximaNova_Bold', sans-serif; }
+
+/**/
 /*Оформление всплывашек*/
 .popup {
   display: none;
@@ -482,7 +524,9 @@ section {
   .fears-girl {
     display: none; }
   .fears-list {
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+  .upsell-block {
+    min-height: 45rem; } }
 
 @media (max-width: 767px) {
   .header {

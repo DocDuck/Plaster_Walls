@@ -11,6 +11,7 @@ $icon-green: #49bf15
 $main-text: #292929
 $text: #1a1820
 $problems-color: rgba(0,0,0,0.4)
+$upsell-bg: #286b0a
 /* Base settings */
 html
 	font-size: 10px
@@ -69,7 +70,8 @@ section
 		@include bold()
 	&_green
 		color: $icon-green
-
+	&_white
+		color: white
 
 /* Main (первая секция)*/
 .header
@@ -92,15 +94,15 @@ section
 		
 	&-content
 		margin-top: 8rem
-	/* Правая часть блока main*/
-	h1
-		margin-top: -1rem
-		margin-bottom: 3rem
-		@include bold()
-		text-transform: uppercase
-		font-size: 4rem
-		line-height: 1.45
-		min-width: 0
+		/* Правая часть блока main*/
+		h1
+			margin-top: -1rem
+			margin-bottom: 3rem
+			@include bold()
+			text-transform: uppercase
+			font-size: 4rem
+			line-height: 1.45
+			min-width: 0
 
 	&-subtitle
 		margin-bottom: 5rem
@@ -196,6 +198,7 @@ section
 	background-size: 90%
 	right: 0		
 	background: url(/img/right-arrow.png) center no-repeat	
+
 /*Секция с ценами*/
 .prices
 	background: url("../img/prices-bg.jpg") center
@@ -203,13 +206,10 @@ section
 		text-align: right
 		margin-top: 3rem
 		margin-right: 0
-	&-header
-		color: white
-		p
-			font-size: 1.4rem
-		
-			
-			
+	p
+		font-size: 1.5rem
+		margin-top: 4rem
+				
 	&-card
 		padding: 1rem 2rem 4rem
 		text-align: center
@@ -243,6 +243,7 @@ section
 		margin-bottom: 2rem
 		font-size: 1.9rem
 		@include bold()
+
 /*Секция с отзывами*/
 .feedback
 	position: relative
@@ -403,6 +404,7 @@ section
 		left: 50%
 		margin-left: -19rem
 
+/* Секция с материалами*/
 .materials
 	.section-header
 		p 
@@ -422,6 +424,7 @@ section
 				margin: 0 auto
 
 		h3
+			font-size: 2.2rem
 			@include bold()
 		a 
 			color: $icon-green
@@ -435,7 +438,49 @@ section
 		@include bold()
 	&-site
 		color: $icon-green		
-	
+/*Секция Тур по стройке*/
+.tour
+	background: white url('../img/tour/tour.jpg') no-repeat center
+	background-size: cover
+	h2
+		@include bold()
+	&-btn 
+		margin: 2.2rem auto 1.5rem
+		display: block
+		height: 5rem
+		width: 100%
+		padding: 1.2rem
+		font-size: 1.2rem
+
+/*Секция допуслуг*/
+.upsell
+	background-color: $upsell-bg
+	.section-header
+
+		h2
+			font-size: 3.6rem
+		p
+			margin-top: 4rem
+			font-size: 1.9rem	
+	&-block
+		min-height: 30rem
+		margin-top: -3rem
+		text-align: center
+		img
+			display: inline-block
+			width: 100%
+			max-width: 45rem	
+		p
+			margin-top: 3rem
+			font-size: 1.8rem 
+			color: white
+		button
+			margin-top: 2rem
+			@include bold()
+			
+/**/
+
+		
 /*Оформление всплывашек*/
 .popup
 	display: none
@@ -521,6 +566,9 @@ section
 			display: none
 		&-list 
 			margin-bottom: 3rem	
+	.upsell
+		&-block
+			min-height: 45rem		
 @media (max-width: 767px)	
 	.header
 		text-align: center
