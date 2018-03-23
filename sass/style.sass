@@ -10,6 +10,7 @@ $btn-color: #fab102
 $icon-green: #49bf15
 $main-text: #292929
 $text: #1a1820
+$problems-color: rgba(0,0,0,0.4)
 /* Base settings */
 html
 	font-size: 10px
@@ -354,13 +355,59 @@ section
 			color: white
 			font-size: 1.6rem
 			@include bold()
+/*  Секция Развеем опасения*/
+.fears
+	position: relative
+	&-list
+		border: 3px solid
+		padding: 2rem 2rem 0
+		min-height: 32rem
+		h4
+			font-size: 2.1rem
+			@include bold()
+		ul
+			padding: 2rem 2rem 0
+			list-style: none
+			font-size: 1.3rem
+			li
+				margin-bottom: 3rem
+				position: relative
+				padding-left: 4rem
+				&:before
+					position: absolute
+					left: 0
+					top: 50%
+					transform: translateY(-50%)
+					display: inline-block
+					content: ''
+					width: 3rem
+					height: 3rem
+					
+		&_problems
+			border-color: $problems-color
+			h4
+				color: $problems-color
+			ul li:before
+				background: url('../img/fears/cross.svg') no-repeat center
 
+		&_solutions
+			border-color: $icon-green
+			ul li:before
+				background: url('../img/fears/check.svg') no-repeat center
+	&-girl
+		position: absolute
+		width: 30rem
+		bottom: 0
+		left: 50%
+		margin-left: -19rem
+		
 
 /*Оформление всплывашек*/
 .popup
 	display: none
 	background-color: rgba(0, 0, 0, 0.5)
 	position: fixed
+
 	left: 0
 	top: 0
 	right: 0
@@ -409,8 +456,9 @@ section
 	.feedback
 		&-form
 			padding: 3rem 5rem
-		
-			
+	.fears
+		&-list
+			min-height: 40rem					
 
 
 @media (max-width: 991px)
@@ -434,7 +482,11 @@ section
 			margin-bottom: 2rem
 		&-card
 			margin-top: 2rem
-
+	.fears
+		&-girl
+			display: none
+		&-list 
+			margin-bottom: 3rem	
 @media (max-width: 767px)	
 	.header
 		text-align: center
@@ -451,7 +503,9 @@ section
 		text-align: center		
 		&-block
 			height: auto
-
+	.fears
+		&-girl
+			display: none
 @media (max-width: 575px)	
 	.main
 		h1

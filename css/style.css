@@ -336,6 +336,50 @@ section {
       font-size: 1.6rem;
       font-family: 'ProximaNova_Bold', sans-serif; }
 
+/*  Секция Развеем опасения*/
+.fears {
+  position: relative; }
+  .fears-list {
+    border: 3px solid;
+    padding: 2rem 2rem 0;
+    min-height: 32rem; }
+    .fears-list h4 {
+      font-size: 2.1rem;
+      font-family: 'ProximaNova_Bold', sans-serif; }
+    .fears-list ul {
+      padding: 2rem 2rem 0;
+      list-style: none;
+      font-size: 1.3rem; }
+      .fears-list ul li {
+        margin-bottom: 3rem;
+        position: relative;
+        padding-left: 4rem; }
+        .fears-list ul li:before {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          display: inline-block;
+          content: '';
+          width: 3rem;
+          height: 3rem; }
+    .fears-list_problems {
+      border-color: rgba(0, 0, 0, 0.4); }
+      .fears-list_problems h4 {
+        color: rgba(0, 0, 0, 0.4); }
+      .fears-list_problems ul li:before {
+        background: url("../img/fears/cross.svg") no-repeat center; }
+    .fears-list_solutions {
+      border-color: #49bf15; }
+      .fears-list_solutions ul li:before {
+        background: url("../img/fears/check.svg") no-repeat center; }
+  .fears-girl {
+    position: absolute;
+    width: 30rem;
+    bottom: 0;
+    left: 50%;
+    margin-left: -19rem; }
+
 /*Оформление всплывашек*/
 .popup {
   display: none;
@@ -382,7 +426,9 @@ section {
     margin-top: 3rem;
     font-size: 2rem; }
   .feedback-form {
-    padding: 3rem 5rem; } }
+    padding: 3rem 5rem; }
+  .fears-list {
+    min-height: 40rem; } }
 
 @media (max-width: 991px) {
   .main {
@@ -401,7 +447,11 @@ section {
     margin-top: 0.5rem;
     margin-bottom: 2rem; }
   .prices-card {
-    margin-top: 2rem; } }
+    margin-top: 2rem; }
+  .fears-girl {
+    display: none; }
+  .fears-list {
+    margin-bottom: 3rem; } }
 
 @media (max-width: 767px) {
   .header {
@@ -416,7 +466,9 @@ section {
     background: none;
     text-align: center; }
     .scheme-block {
-      height: auto; } }
+      height: auto; }
+  .fears-girl {
+    display: none; } }
 
 @media (max-width: 575px) {
   .main h1 {
