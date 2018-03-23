@@ -309,6 +309,7 @@ section {
 
 /* Секция Всё включено */
 .inclusive {
+  font-size: 1.4rem;
   background-color: #f5f5f5; }
   .inclusive .media {
     min-height: 10rem; }
@@ -338,6 +339,7 @@ section {
 
 /*  Секция Развеем опасения*/
 .fears {
+  font-size: 1.4rem;
   position: relative; }
   .fears-list {
     border: 3px solid;
@@ -379,6 +381,35 @@ section {
     bottom: 0;
     left: 50%;
     margin-left: -19rem; }
+
+.materials {
+  font-size: 1.9rem;
+  text-align: center;
+  background: url("../img/materials/bg.jpg") no-repeat center;
+  background-size: cover; }
+  .materials .section-header p {
+    margin-top: 5rem; }
+  .materials-block {
+    text-align: center; }
+    .materials-block_img {
+      min-height: 18rem; }
+      .materials-block_img img {
+        display: block;
+        margin: 0 auto; }
+    .materials-block h3 {
+      font-family: 'ProximaNova_Bold', sans-serif; }
+    .materials-block a {
+      color: #49bf15;
+      border-bottom: 2px dotted #49bf15; }
+      .materials-block a:hover {
+        border-bottom: none;
+        color: #2f7a0d; }
+  .materials-footer {
+    margin-top: 11rem;
+    font-size: 2rem;
+    font-family: 'ProximaNova_Bold', sans-serif; }
+  .materials-site {
+    color: #49bf15; }
 
 /*Оформление всплывашек*/
 .popup {

@@ -488,7 +488,60 @@
 			</div>
 			<img src="img/fears/fears-girl.png" alt="fears-girl" class="fears-girl ">
 		</section>
-	
+
+		<section class="materials">
+			<div class="container">
+				<div class="section-header">
+					<h2>Материалы</h2>
+					<p>Мы работаем только качественными, проверенными временем материалами следующих производителей:</p>
+
+				</div>
+				<div class="materials-slider">
+					<div class="materials-block">
+						<div class="materials-block_img align-self-center">
+							<picture>
+								<img src="../img/materials/1.png" alt="Платите по факту">
+							</picture>
+						</div>
+						<h3>Knauf</h3>
+						<p>Аква слой <strong>245</strong> руб/меш <br>Гипс актив <strong>245</strong> руб/меш</p>
+						<a href="#">Сертификат</a>
+					</div>
+					<div class="materials-block">
+						<div class="materials-block_img align-self-center">
+							<picture>
+								<img src="../img/materials/2.png" alt="Заключаем договор">
+							</picture>
+						</div>
+						<h3>Volma</h3>
+						<p>Аква слой <strong>245</strong> руб/меш <br>Гипс актив <strong>245</strong> руб/меш</p>
+						<a href="#">Сертификат</a>
+					</div>
+					<div class="materials-block">
+						<div class="materials-block_img align-self-center">
+							<picture>
+								<img src="../img/materials/3.png" alt="Точно в срок">
+							</picture>
+						</div>
+						<h3>Forman</h3>
+						<p>Аква слой <strong>245</strong> руб/меш <br>Гипс актив <strong>245</strong> руб/меш</p>
+						<a href="#">Сертификат</a>
+					</div>
+					<div class="materials-block">
+						<div class="materials-block_img align-self-center">
+							<picture>
+								<img src="../img/materials/4.png" alt="Точно в срок">
+							</picture>
+						</div>
+						<h3>Ceresite</h3>
+						<p>Аква слой <strong>245</strong> руб/меш <br>Гипс актив <strong>245</strong> руб/меш</p>
+						<a href="#">Сертификат</a>
+					</div>
+				</div>		
+				<p class="materials-footer">Вы можете приобрести материалы на сайте <a class="materials-site" href="#">site.ru</a> или по телефону <strong>+7 999 999 99 99</strong>
+				</p>
+			</div>
+		</section>
 	<!-- Модальные окна -->
 	
 	<!-- Получить консультацию -->
@@ -580,6 +633,45 @@
 				prevArrow: '<button type="button" class="feedback-slider_btn feedback-prev"><img src="img/feedback/fb-bck.svg"></button>',
 				nextArrow: '<button type="button" class="feedback-slider_btn feedback-next"><img src="img/feedback/fb-nxt.svg"></button>',	
 			});
+
+			/*Слайдер Материалы*/
+			$('.materials-slider').slick({
+    			infinite: true,
+    			slidesToShow: 4,
+    			slidesToScroll: 1,
+    			responsive: [
+			    {
+			      breakpoint: 1199,
+			      settings: {
+			        slidesToShow: 3,
+			        prevArrow: '<button class="prev arrow"></button>',
+			        nextArrow: '<button class="next arrow"></button>',
+			        slidesToScroll: 2,
+			        infinite: true
+   
+			      }
+			    },
+			    {
+			      breakpoint: 991,
+			      settings: {
+			        slidesToShow: 2,
+			        prevArrow: '<button class="prev arrow"></button>',
+			        nextArrow: '<button class="next arrow"></button>',
+			        slidesToScroll: 2
+			      }
+			    },
+			    {
+			      breakpoint: 767,
+			      settings: {
+			        slidesToShow: 1,
+			        prevArrow: '<button class="prev arrow"></button>',
+			        nextArrow: '<button class="next arrow"></button>',
+			        slidesToScroll: 1
+			      	}
+			    }
+				]
+	  		});	
+
 			/* Всплывашка */
 			$('.popup-btn').on('click', function(event) {
 				event.preventDefault();
