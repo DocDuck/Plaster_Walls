@@ -44,7 +44,7 @@ button, input, a, textarea
 		display: inline-block
 		background-color: white
 		padding: 0.5rem
-	&_input
+	&_input, &-textarea
 		display: block
 		width: 100%
 		border: 1px solid #ddd 
@@ -430,6 +430,7 @@ section
 			color: $icon-green
 			border-bottom: 2px dotted $icon-green
 			&:hover
+				text-decoration: none
 				border-bottom: none	
 				color: darken($icon-green, 15%)			
 	&-footer 
@@ -478,7 +479,48 @@ section
 			margin-top: 2rem
 			@include bold()
 			
-/**/
+/*Секция контакты*/
+.contacts
+	background: #fff url(../img/contacts/bg.jpg) center no-repeat
+	background-size: cover
+	&-map
+		h2
+			@include bold()
+		p 
+			margin-top: 2rem
+			margin-bottom: 2rem
+			font-size: 1.3rem
+		&_link 
+			display: inline-block
+			color: $text
+			border-bottom: 1px dotted $text	
+			&:hover
+				color: darken($text, 10%)
+				text-decoration: none
+				
+	&-form
+		padding: 4rem 5rem 2rem
+		background-color: white
+		text-align: center
+		&_header
+			font-size: 1.9rem 
+			@include reg()
+			line-height: 1.2
+			margin-bottom: 4rem	
+/* Подвал */
+footer
+	padding: 4rem 0
+	.footer
+		&-contacts
+			text-align: center
+			
+			p 
+				margin: 0
+		&-dev
+
+			text-align: right
+
+
 
 		
 /*Оформление всплывашек*/
@@ -568,7 +610,13 @@ section
 			margin-bottom: 3rem	
 	.upsell
 		&-block
-			min-height: 45rem		
+			min-height: 45rem
+	.contacts
+		h2
+			text-align: center
+			margin-bottom: 3rem
+		p
+			margin-bottom: 3rem		
 @media (max-width: 767px)	
 	.header
 		text-align: center
@@ -603,7 +651,8 @@ section
 			max-width: 15rem		
 		&-btn
 			font-size: 1.2rem		
-			
+	.contacts
+		text-align: center		
 
 
 					

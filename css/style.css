@@ -35,7 +35,7 @@ button:focus, input:focus, a:focus, textarea:focus {
   background-color: white;
   padding: 0.5rem; }
 
-.form_input {
+.form_input, .form-textarea {
   display: block;
   width: 100%;
   border: 1px solid #ddd;
@@ -405,6 +405,7 @@ section {
       color: #49bf15;
       border-bottom: 2px dotted #49bf15; }
       .materials-block a:hover {
+        text-decoration: none;
         border-bottom: none;
         color: #2f7a0d; }
   .materials-footer {
@@ -452,7 +453,43 @@ section {
       margin-top: 2rem;
       font-family: 'ProximaNova_Bold', sans-serif; }
 
-/**/
+/*Секция контакты*/
+.contacts {
+  background: #fff url(../img/contacts/bg.jpg) center no-repeat;
+  background-size: cover; }
+  .contacts-map h2 {
+    font-family: 'ProximaNova_Bold', sans-serif; }
+  .contacts-map p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem; }
+  .contacts-map_link {
+    display: inline-block;
+    color: #1a1820;
+    border-bottom: 1px dotted #1a1820; }
+    .contacts-map_link:hover {
+      color: #020203;
+      text-decoration: none; }
+  .contacts-form {
+    padding: 4rem 5rem 2rem;
+    background-color: white;
+    text-align: center; }
+    .contacts-form_header {
+      font-size: 1.9rem;
+      font-family: 'ProximaNova_Reg', sans-serif;
+      line-height: 1.2;
+      margin-bottom: 4rem; }
+
+/* Подвал */
+footer {
+  padding: 4rem 0; }
+  footer .footer-contacts {
+    text-align: center; }
+    footer .footer-contacts p {
+      margin: 0; }
+  footer .footer-dev {
+    text-align: right; }
+
 /*Оформление всплывашек*/
 .popup {
   display: none;
@@ -526,7 +563,12 @@ section {
   .fears-list {
     margin-bottom: 3rem; }
   .upsell-block {
-    min-height: 45rem; } }
+    min-height: 45rem; }
+  .contacts h2 {
+    text-align: center;
+    margin-bottom: 3rem; }
+  .contacts p {
+    margin-bottom: 3rem; } }
 
 @media (max-width: 767px) {
   .header {
@@ -557,4 +599,6 @@ section {
   .feedback-arm {
     max-width: 15rem; }
   .feedback-btn {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .contacts {
+    text-align: center; } }
