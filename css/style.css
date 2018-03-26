@@ -36,6 +36,8 @@ button:focus, input:focus, a:focus, textarea:focus {
   padding: 0.5rem; }
 
 .form_input, .form-textarea {
+  text-align: center;
+  font-size: 1.3rem;
   display: block;
   width: 100%;
   border: 1px solid #ddd;
